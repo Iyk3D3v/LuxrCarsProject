@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxrCars", "LuxrCars\LuxrCars.csproj", "{B2EFCEA4-AABA-4B43-8D22-3FE2C2A63FD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxrCars.Domain", "LuxrCars.Domain\LuxrCars.Domain.csproj", "{426D8CDE-8352-4200-BAD0-A050A78F67E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxrCars.Infrastructure", "LuxrCars.Infrastructure\LuxrCars.Infrastructure.csproj", "{86D6981A-8971-4C1C-8E46-58402CF9D13B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2EFCEA4-AABA-4B43-8D22-3FE2C2A63FD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2EFCEA4-AABA-4B43-8D22-3FE2C2A63FD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2EFCEA4-AABA-4B43-8D22-3FE2C2A63FD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2EFCEA4-AABA-4B43-8D22-3FE2C2A63FD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{426D8CDE-8352-4200-BAD0-A050A78F67E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{426D8CDE-8352-4200-BAD0-A050A78F67E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{426D8CDE-8352-4200-BAD0-A050A78F67E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{426D8CDE-8352-4200-BAD0-A050A78F67E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86D6981A-8971-4C1C-8E46-58402CF9D13B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86D6981A-8971-4C1C-8E46-58402CF9D13B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86D6981A-8971-4C1C-8E46-58402CF9D13B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86D6981A-8971-4C1C-8E46-58402CF9D13B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

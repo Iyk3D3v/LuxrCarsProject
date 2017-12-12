@@ -1,0 +1,5 @@
+C:\Users\Ikechukwu\Documents\Visual Studio 2015\Projects\LuxrCars\LuxrCars.Domain\bin\Debug\LuxrCars.Domain.dll
+C:\Users\Ikechukwu\Documents\Visual Studio 2015\Projects\LuxrCars\LuxrCars.Domain\bin\Debug\LuxrCars.Domain.pdb
+C:\Users\Ikechukwu\Documents\Visual Studio 2015\Projects\LuxrCars\LuxrCars.Domain\obj\Debug\LuxrCars.Domain.dll
+C:\Users\Ikechukwu\Documents\Visual Studio 2015\Projects\LuxrCars\LuxrCars.Domain\obj\Debug\LuxrCars.Domain.pdb
+C:\Users\Ikechukwu\Documents\Visual Studio 2015\Projects\LuxrCars\LuxrCars.Domain\obj\Debug\LuxrCars.Domain.csprojResolveAssemblyReference.cache

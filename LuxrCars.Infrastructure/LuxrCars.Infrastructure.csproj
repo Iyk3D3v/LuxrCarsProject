@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{86D6981A-8971-4C1C-8E46-58402CF9D13B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LuxrCars.Infrastructure</RootNamespace>
+    <AssemblyName>LuxrCars.Infrastructure</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Customer.cs" />
+    <Compile Include="Data\DataEntities.cs" />
+    <Compile Include="Data\Image.cs" />
+    <Compile Include="Data\Order.cs" />
+    <Compile Include="Data\OrderItem.cs" />
+    <Compile Include="Data\Payment.cs" />
+    <Compile Include="Data\Product.cs" />
+    <Compile Include="Data\User.cs" />
+    <Compile Include="MIgrations\201712090307321_InitialSchema.cs" />
+    <Compile Include="MIgrations\201712090307321_InitialSchema.Designer.cs">
+      <DependentUpon>201712090307321_InitialSchema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIgrations\201712090407508_AddedPayment.cs" />
+    <Compile Include="MIgrations\201712090407508_AddedPayment.Designer.cs">
+      <DependentUpon>201712090407508_AddedPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIgrations\201712122124553_SortedDataTables.cs" />
+    <Compile Include="MIgrations\201712122124553_SortedDataTables.Designer.cs">
+      <DependentUpon>201712122124553_SortedDataTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MIgrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LuxrCars.Domain\LuxrCars.Domain.csproj">
+      <Project>{426d8cde-8352-4200-bad0-a050a78f67e1}</Project>
+      <Name>LuxrCars.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utilities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MIgrations\201712090307321_InitialSchema.resx">
+      <DependentUpon>201712090307321_InitialSchema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIgrations\201712090407508_AddedPayment.resx">
+      <DependentUpon>201712090407508_AddedPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIgrations\201712122124553_SortedDataTables.resx">
+      <DependentUpon>201712122124553_SortedDataTables.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
