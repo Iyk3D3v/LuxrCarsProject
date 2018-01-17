@@ -22,7 +22,7 @@ namespace LuxrCars.Controllers
         // GET: Home
         public ActionResult Index()
         {
-           var products = _products.ViewInventory();
+           var products = _products.GetInventory();
             return View(products);
         }
     }

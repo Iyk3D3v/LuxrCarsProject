@@ -71,6 +71,10 @@
     <Compile Include="MIgrations\201712122124553_SortedDataTables.Designer.cs">
       <DependentUpon>201712122124553_SortedDataTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="MIgrations\201801131056497_Try.cs" />
+    <Compile Include="MIgrations\201801131056497_Try.Designer.cs">
+      <DependentUpon>201801131056497_Try.cs</DependentUpon>
+    </Compile>
     <Compile Include="MIgrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\ProductRepository.cs" />
@@ -97,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MIgrations\201712122124553_SortedDataTables.resx">
       <DependentUpon>201712122124553_SortedDataTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIgrations\201801131056497_Try.resx">
+      <DependentUpon>201801131056497_Try.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

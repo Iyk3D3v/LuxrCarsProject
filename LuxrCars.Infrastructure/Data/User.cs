@@ -23,5 +23,7 @@ namespace LuxrCars.Infrastructure.Data
         public virtual Customer Customer { get; set; }
 
         public virtual ICollection<Order> Order { get; set; } = new HashSet<Order>();
+
+
     }
 }

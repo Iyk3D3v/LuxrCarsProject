@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LuxrCars.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,7 @@ namespace LuxrCars
     {
         protected void Application_Start()
         {
+            DatabaseMigrator.UpdateDatabase();
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }

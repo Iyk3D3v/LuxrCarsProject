@@ -17,7 +17,7 @@ namespace LuxrCars.Domain.Managers
             _product = product;
         }
 
-      public ProductModel[] ViewInventory()
+      public ProductModel[] GetInventory()
         {
             return _product.GetProductAvailable();
         }

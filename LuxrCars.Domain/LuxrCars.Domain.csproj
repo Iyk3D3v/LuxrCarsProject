@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interface\Repositories\IProductRepository.cs" />
+    <Compile Include="Interface\Services\ICartService.cs" />
     <Compile Include="Managers\ProductManger.cs" />
     <Compile Include="Models\ImageModel.cs" />
     <Compile Include="Models\Model.cs" />

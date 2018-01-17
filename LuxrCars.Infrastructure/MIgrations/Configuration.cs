@@ -5,7 +5,7 @@ namespace LuxrCars.Infrastructure.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<LuxrCars.Infrastructure.Data.DataEntities>
+    public sealed class Configuration : DbMigrationsConfiguration<LuxrCars.Infrastructure.Data.DataEntities>
     {
         public Configuration()
         {
@@ -39,6 +39,36 @@ namespace LuxrCars.Infrastructure.Migrations
                 Year = 2017,
                 Speed = "0-60 in 2 seconds"
 
+            },
+                new Data.Product
+                {
+                    Name = "Bugatii Chiron",
+                    Price = 250000,
+                    Quantity = 32,
+                    cModel = "2017",
+                    Power = "1200BHP",
+                    Year = 2017,
+                    Speed = "0-60 in 2 seconds"
+                },
+            new Data.Product
+            {
+                Name = "Toyota  Chiron",
+                Price = 250000,
+                Quantity = 32,
+                cModel = "1992",
+                Power = "1200BHP",
+                Year = 2017,
+                Speed = "0-60 in 210 seconds"
+            },
+            new Data.Product
+            {
+                Name = "Benz",
+                Price = 10000,
+                Quantity = 23,
+                cModel = "1932",
+                Power = "300BHP",
+                Year = 1871,
+                Speed = "0-60 in 345 seconds"
             });
         }
     }
