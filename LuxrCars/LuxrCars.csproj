@@ -294,8 +294,8 @@
     <Content Include="Lib\materialize\tests\spec\tabs\tabsSpec.js" />
     <Content Include="Lib\materialize\tests\spec\toast\toastSpec.js" />
     <Content Include="Lib\materialize\tests\spec\tooltip\tooltipSpec.js" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Views\Scripts\bootstrap.js" />
+    <Content Include="Views\Scripts\bootstrap.min.js" />
     <Content Include="Content\materialize\font\roboto\Roboto-Thin.woff2" />
     <Content Include="Content\materialize\font\roboto\Roboto-Thin.woff" />
     <Content Include="Content\materialize\font\roboto\Roboto-Thin.ttf" />
@@ -444,23 +444,27 @@
     <Content Include="Lib\jquery\external\sizzle\dist\sizzle.min.map" />
     <Content Include="Lib\jquery\README.md" />
     <Content Include="Lib\jquery\src\.eslintrc.json" />
-    <None Include="Scripts\jquery-2.1.1.intellisense.js" />
-    <Content Include="Scripts\jquery-2.1.1.js" />
-    <Content Include="Scripts\jquery-2.1.1.min.js" />
-    <Content Include="Scripts\materialize\materialize.js" />
-    <Content Include="Scripts\materialize\materialize.min.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Views\Cart\Details.cshtml" />
+    <None Include="Views\Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Views\Scripts\jquery-2.1.1.js" />
+    <Content Include="Views\Scripts\jquery-2.1.1.min.js" />
+    <Content Include="Views\Scripts\materialize\materialize.js" />
+    <Content Include="Views\Scripts\materialize\materialize.min.js" />
+    <Content Include="Views\Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\CartController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infrastructure\DatabaseMigrator.cs" />
+    <Compile Include="Infrastructure\Services\CartService.cs" />
+    <Compile Include="Models\CartViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -472,7 +476,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Scripts\jquery-2.1.1.min.map" />
+    <Content Include="Views\Scripts\jquery-2.1.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -483,7 +487,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Lib\materialize\test\html\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LuxrCars.Domain\LuxrCars.Domain.csproj">

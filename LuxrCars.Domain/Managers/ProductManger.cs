@@ -22,6 +22,11 @@ namespace LuxrCars.Domain.Managers
             return _product.GetProductAvailable();
         }
 
+        public ProductModel GetProduct(int productId)
+        {
+            return _product.GetProductsById(productId);
+        }
+
 
     }
 }

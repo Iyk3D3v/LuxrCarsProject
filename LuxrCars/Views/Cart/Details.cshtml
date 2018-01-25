@@ -1,0 +1,43 @@
+﻿@model LuxrCars.Models.CartViewModel
+   @{
+    ViewBag.Title = "Cart";
+}
+
+<h3>Your shopping Cart</h3>
+
+@if (Model.Cart != null && Model.Cart.Any())
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+       
+        @foreach (var item in Model.Cart)
+        {
+            <tbody>
+                <tr>
+                    <td>@item.Product.Name</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.Product.Price</td>
+                    <td><a class="btn waves-effect waves-light" href="@Url.Action("Remove","Cart", new {id = item.ProductID })"><i class="material-icons">remove_shopping_cart</i></a></td>
+                </tr>
+           
+            </tbody>
+        }
+
+      
+
+    </table>
+}
+
+else
+{
+    <div class="empty">You have no items in your shopping cart</div>
+}
+
+

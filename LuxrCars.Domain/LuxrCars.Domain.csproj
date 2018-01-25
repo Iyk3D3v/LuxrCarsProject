@@ -42,14 +42,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interface\Repositories\IProductRepository.cs" />
-    <Compile Include="Interface\Services\ICartService.cs" />
     <Compile Include="Managers\ProductManger.cs" />
     <Compile Include="Models\ImageModel.cs" />
+    <Compile Include="Models\OrderItemModel.cs" />
     <Compile Include="Models\Model.cs" />
     <Compile Include="Models\ProductModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Interface\Services\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

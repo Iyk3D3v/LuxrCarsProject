@@ -1,8 +1,10 @@
-﻿using LuxrCars.Domain.Managers;
+﻿
+using LuxrCars.Domain.Managers;
 using LuxrCars.Infrastructure;
 using LuxrCars.Infrastructure.Data;
 
 using LuxrCars.Infrastructure.Repositories;
+using LuxrCars.Infrastructure.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,16 +16,21 @@ namespace LuxrCars.Controllers
     public class HomeController : Controller
     {
         private ProductManger _products;
+       
+
         public HomeController()
         {
             var productRepo = new ProductRepository();
             _products = new ProductManger(productRepo);
         }
+
         // GET: Home
         public ActionResult Index()
         {
            var products = _products.GetInventory();
             return View(products);
         }
+
+      
     }
 }

@@ -10,5 +10,8 @@ namespace LuxrCars.Domain.Interface.Repositories
    public interface IProductRepository
     {
         ProductModel[] GetProductAvailable();
+
+        ProductModel GetProductsById(int y);
+
     }
 }

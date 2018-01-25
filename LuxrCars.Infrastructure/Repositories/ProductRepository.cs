@@ -11,6 +11,48 @@ namespace LuxrCars.Infrastructure.Repositories
 {
    public class ProductRepository:IProductRepository
     {
+
+        public ProductModel GetProductsById(int id)
+        {
+            using (var context = new DataEntities())
+            {
+                var query = from p in context.Products
+                            where p.ProductID == id
+                            select new
+                            {
+                                Product = p,
+                                Images = p.Image
+
+                            };
+                var record = query.FirstOrDefault();
+                if (record == null) throw new Exception("Invalid record ID");
+
+                var images = from image in record.Images
+                             select new ImageModel
+                             {
+                                 ImageID = image.ImageID,
+                                 ProductID = image.ProductID,
+                                 Url = new Uri(image.Url)
+
+
+                             };
+                var model = new ProductModel
+                {
+                    ProductID = record.Product.ProductID,
+                    Name = record.Product.Name,
+                    Price = record.Product.Price,
+                    Quantity = record.Product.Quantity,
+                    cModel = record.Product.cModel,
+                    Year = record.Product.Year,
+                    Power = record.Product.Power,
+                    Speed = record.Product.Speed,
+                    Image = images.ToArray()
+                };
+                return model;
+
+
+            }
+        }
         public ProductModel[] GetProductAvailable()
         {
             using (var context = new DataEntities())

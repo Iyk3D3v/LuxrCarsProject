@@ -1,6 +1,12 @@
 ﻿@model ProductModel[]
 @{
     ViewBag.Title = "Index";
+
+    int num = Model.Count();
+
+    var count = 1;
+    var countt = 1000;
+    var counttt = 10000;
 }
 
 
@@ -27,26 +33,27 @@
 </div>
 
 <div class="row">
+    @*//for(int i = @num; i < )*@
     @foreach (var products in Model)
     {
-        <div class="col s12 m3">
+        <div class="col s12 m4">
             <div class="card">
                 <div class="card-image">
                     <div class="card-tabs">
                         <ul class="tabs tabs-fixed-width">
-                            <li class="tab"><a href="#test4">Img 1</a></li>
-                            <li class="tab"><a class="active" href="#test5">Img 2</a></li>
-                            <li class="tab"><a href="#test6">Img 3</a></li>
+                            <li class="tab"><a href="#@count">Img 1</a></li>
+                            <li class="tab"><a class="active" href="#@countt">Img 2</a></li>
+                            <li class="tab"><a href="#@counttt">Img 3</a></li>
                         </ul>
                     </div>
                     <div class="card-content grey lighten-4">
-                        <div id="test4"><img src="~/Lib/materialize/dist/img/benjamin-child-90768.jpg"></div>
-                        <div id="test5"><img src="~/Lib/materialize/dist/img/dustin.jpg" /></div>
-                        <div id="test6"> <img src="~/Lib/materialize/dist/img/brooke-lark-176362.jpg" /></div>
+                        <div id="@count"><img src="~/Lib/materialize/dist/img/benjamin-child-90768.jpg"></div>
+                        <div id="@countt"><img src="~/Lib/materialize/dist/img/dustin.jpg" /></div>
+                        <div id="@counttt"> <img src="~/Lib/materialize/dist/img/brooke-lark-176362.jpg" /></div>
                     </div>
                     
                     <span class="card-title">@products.Name</span>
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">shopping_cart</i></a>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red" href="@Url.Action("Add","Cart", new {id = products.ProductID })"><i class="material-icons">shopping_cart</i></a>
                 </div>
                 <div class="card-content">
                     <p>@products.Price</p>
@@ -54,6 +61,9 @@
                 </div>
             </div>
         </div>
+        count++;
+        countt++;
+        counttt++;
     }
     
 </div>
