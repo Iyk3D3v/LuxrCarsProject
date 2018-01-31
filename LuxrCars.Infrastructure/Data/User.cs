@@ -10,7 +10,7 @@ namespace LuxrCars.Infrastructure.Data
     {
         public int UserID { get; set; }
 
-        public string password { get; set; }
+        public string PasswordHash { get; set; }
 
         public string Email { get; set; }
 
@@ -24,6 +24,9 @@ namespace LuxrCars.Infrastructure.Data
 
         public virtual ICollection<Order> Order { get; set; } = new HashSet<Order>();
 
+        public virtual ICollection<UserRole> UserRoles { get; set; } = new HashSet<UserRole>();
+
 
     }
 }
+ 

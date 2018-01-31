@@ -70,6 +70,31 @@ namespace LuxrCars.Infrastructure.Migrations
                 Year = 1871,
                 Speed = "0-60 in 345 seconds"
             });
+
+            context.Roles.AddOrUpdate(r => r.Name, new Data.Role
+            {
+                Name = "User"
+
+            },
+            new Data.Role
+            {
+                Name = "Admin"
+            });
+
+            context.Users.AddOrUpdate(u => u.firstName, new Data.User
+            {
+                Email = "mee@gmail.com",
+                firstName = "Mee",
+                lastName = "Li",
+                PasswordHash = "whosword"
+                
+            });
+
+            context.UserRoles.AddOrUpdate(ur => ur.RoleId, new Data.UserRole
+            {
+                RoleId = 1,
+                UserId = 1
+            });
         }
     }
 }

@@ -14,7 +14,7 @@
     <ul class="slides">
         <li>
 
-            <img src="~/Lib/materialize/dist/img/dustin.jpg" /> <alt>just here</alt><!-- random image -->
+            <img src="~/Lib/materialize/dist/img/a.jpeg"/> <alt>just here</alt><!-- random image -->
             <div class="caption center-align">
                 <h3>This is our big Tagline!</h3>
                 <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -22,7 +22,7 @@
         </li>
         <li>
 
-            <img src="~/Lib/materialize/dist/img/benjamin-child-90768.jpg" /> <!-- random image -->
+            <img src="~/Lib/materialize/dist/img/b.jpeg" /> <!-- random image -->
             <div class="caption left-align">
                 <h3>Left Aligned Caption</h3>
                 <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -36,7 +36,7 @@
     @*//for(int i = @num; i < )*@
     @foreach (var products in Model)
     {
-        <div class="col s12 m4">
+        <div class="col s12 m6">
             <div class="card">
                 <div class="card-image">
                     <div class="card-tabs">
@@ -47,9 +47,9 @@
                         </ul>
                     </div>
                     <div class="card-content grey lighten-4">
-                        <div id="@count"><img src="~/Lib/materialize/dist/img/benjamin-child-90768.jpg"></div>
-                        <div id="@countt"><img src="~/Lib/materialize/dist/img/dustin.jpg" /></div>
-                        <div id="@counttt"> <img src="~/Lib/materialize/dist/img/brooke-lark-176362.jpg" /></div>
+                        <div id="@count"><img src="~/Lib/materialize/dist/img/a.jpeg" width="600" height="400" /></div>
+                        <div id="@countt"><img src="~/Lib/materialize/dist/img/b.jpeg" width="600" height="400" /></div>
+                        <div id="@counttt"> <img src="~/Lib/materialize/dist/img/d.jpeg" width="600" height="400" /></div>
                     </div>
                     
                     <span class="card-title">@products.Name</span>

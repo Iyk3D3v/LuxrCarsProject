@@ -2,6 +2,7 @@
   "name": "LuxrCars",
   "dependencies": {
     "font-awesome": "^4.7.0",
-    "materialize": "^0.100.2"
+    "materialize": "^0.100.2",
+    "jquery-validation-unobtrusive": "^3.2.6"
   }
 }

@@ -22,5 +22,9 @@ namespace LuxrCars.Infrastructure.Data
         public DbSet<OrderItem> Orderitems { get; set; }
 
         public DbSet<Payment> Payments { get; set; }
+
+        public DbSet<Role> Roles { get; set; }
+
+        public DbSet<UserRole> UserRoles { get; set; }
     }
 }

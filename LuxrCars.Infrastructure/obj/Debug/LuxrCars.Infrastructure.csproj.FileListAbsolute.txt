@@ -15,3 +15,5 @@ C:\Users\Ikechukwu\Documents\Visual Studio 2015\Projects\LuxrCars\LuxrCars.Infra
 C:\Users\Ikechukwu\Documents\Visual Studio 2015\Projects\LuxrCars\LuxrCars.Infrastructure\obj\Debug\LuxrCars.Infrastructure.Migrations.AddedPayment.resources
 C:\Users\Ikechukwu\Documents\Visual Studio 2015\Projects\LuxrCars\LuxrCars.Infrastructure\obj\Debug\LuxrCars.Infrastructure.Migrations.SortedDataTables.resources
 C:\Users\Ikechukwu\Documents\Visual Studio 2015\Projects\LuxrCars\LuxrCars.Infrastructure\obj\Debug\LuxrCars.Infrastructure.Migrations.Try.resources
+C:\Users\Ikechukwu\Documents\Visual Studio 2015\Projects\LuxrCars\LuxrCars.Infrastructure\obj\Debug\LuxrCars.Infrastructure.Migrations.addedRoles.resources
+C:\Users\Ikechukwu\Documents\Visual Studio 2015\Projects\LuxrCars\LuxrCars.Infrastructure\obj\Debug\LuxrCars.Infrastructure.Migrations.changedpasswordtopasswordhash.resources

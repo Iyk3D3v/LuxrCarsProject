@@ -4,6 +4,7 @@
 }
 
 <h3>Your shopping Cart</h3>
+<a class="btn waves-effect waves-light" href="@Url.Action("Index","Home")">Continue Shopping</a>
 
 @if (Model.Cart != null && Model.Cart.Any())
 {
@@ -29,6 +30,9 @@
            
             </tbody>
         }
+        <tr>
+            <td colspan="4"><a class="btn waves-effect waves-light" href="@Url.Action("Place","Order")"><i class="material-icons">send</i></a></td>
+        </tr>
 
       
 
